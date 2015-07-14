@@ -17,12 +17,10 @@
               <h2><?php echo strip_tags( get_the_excerpt() ); ?></h2>
               <ul class="post-meta no-bullet">
                 <li class="author">
-                  <a href="author.html">
-                    <span class="wpt-avatar small">
-                      <?php echo get_avatar( get_the_author_meta( 'ID' ), 24 ); ?>
-                    </span>
+                  <span class="wpt-avatar small">
+                    <?php echo get_avatar( get_the_author_meta( 'ID' ), 24 ); ?>
+                  </span>
                     by <?php the_author_posts_link(); ?>
-                  </a>
                 </li>
                 <li class="cat">in <?php the_category( ' ' ); ?></li>
                 <li class="date">in <?php the_time('F j, Y'); ?></li>
