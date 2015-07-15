@@ -12,7 +12,7 @@ function register_theme_menus() {
 
 	register_nav_menus( 
 		array(
-				'primary-menu' => __('Primary Menu')
+				'primary-menu' => __('Primary Menu', 'joshwa')
 			)
 	);
 
@@ -33,7 +33,6 @@ function wpt_create_widget( $name, $id, $description ) {
 	));
 
 }
-
 wpt_create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
 wpt_create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
 

@@ -9,9 +9,6 @@
 
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-
-
-
             <article class="post">
               <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>              
               <ul class="post-meta no-bullet">
@@ -37,10 +34,8 @@
             </article>
 
 
-
-
           <?php endwhile; else : ?>
-      		<p><?php _e( 'Sorry, no pages found.' ); ?></p>
+      		<p><?php _e( 'Sorry, no posts found.', 'joshwa' ); ?></p>
       	  <?php endif; ?>   
 
         </div>

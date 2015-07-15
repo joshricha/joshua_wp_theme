@@ -9,7 +9,7 @@
 
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <article class="post">
+            <article <?php post_class('post') ?>>
               <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
               <h2><?php echo strip_tags( get_the_excerpt() ); ?></h2>
               <ul class="post-meta no-bullet">
@@ -29,7 +29,8 @@
             <?php endif; ?>
             </article>
 
-
+            <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+            <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
 
 
           <?php endwhile; else : ?>

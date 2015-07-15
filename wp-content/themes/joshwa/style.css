@@ -6,7 +6,7 @@ Description: A post modern, simple, responsive portfolio theme designed in WordP
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, white, light, one-column, two-columns, left-sidebar, flexible-width, fluid-layout, responsive-layout, custom-menu, featured-images
+Tags: black, white, light, one-column, two-columns, left-sidebar, fluid-layout, responsive-layout, custom-menu, featured-images
  
 */
 
@@ -366,6 +366,22 @@ nav .sub-menu a:hover {
   bottom: 0;
   left: 0;
   background: #ed5a5a;
+}
+
+/* Alignment */
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-clear {
